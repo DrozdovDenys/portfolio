@@ -719,6 +719,7 @@ footer {
   }
 }
 
+<<<<<<< HEAD
 @media (hover: none) {
   /* ==================hover efect for mobile========================== */
   .aHover {
@@ -743,4 +744,30 @@ footer {
     opacity: 1;
   }
   /* =======================================================*/
+=======
+@media(hover: none) {
+    /* ==================hover efect for mobile========================== */
+    .aHover {
+      opacity: 1 !important;
+    }
+    .brandsHover {
+      transform: scale(1.2) !important;
+    }
+    .myBtnHover {
+      background-color: #555 !important;
+    }
+    .liveBtnHover {
+      background-color: #000000 !important;
+    }
+    .sourceBtnHover {
+      background-color: #ffffff !important;
+    }
+    .cardHover .project-img {
+      filter: blur(80px); 
+    }
+    .cardHover .project-content {
+      opacity: 1;
+    }
+    /* =======================================================*/
+>>>>>>> 815ab1c9650c8e7e0da5b27a567a874383efc77d
 }
