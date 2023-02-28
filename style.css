@@ -594,14 +594,11 @@ footer {
   .sourceBtnHover {
     background-color: #ffffff !important;
   }
-  .cardHover .project-img {
+  /* .cardHover .project-img {
     filter: blur(80px);
-  }
+  } */
   .cardHover .project-content {
     opacity: 1;
-  }
-  .project-card:hover .project-img {
-    filter: blur(0px);
   }
   /* =======================================================*/
 }
