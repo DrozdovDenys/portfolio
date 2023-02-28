@@ -448,7 +448,7 @@ footer {
   .project-info {
     margin: 10px;
   }
-  .project-img {
+  .project-img, .project-content {
     transition: 0s;
   }
   .mini-project-card {
