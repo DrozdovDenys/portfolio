@@ -53,10 +53,10 @@ body {
   transition: 0.5s;
   font-size: calc(16px + 4 * ((100vw - 320px) / (1440 - 425)));
 }
-/* .link a:hover,
+.link a:hover,
 .link.active a {
   opacity: 1;
-} */
+}
 
 /* about-me-section */
 .about-me-section {
@@ -119,9 +119,9 @@ body {
   transform: rotate(270deg);
 }
 
-/* #myBtn:hover {
-  background-color: #555; 
-} */
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
 
 /* project-section */
 .project-section {
@@ -229,7 +229,7 @@ body {
   color: #000000;
   border: 2px solid #000000;
 }
-/* .project-btn.live:hover {
+.project-btn.live:hover {
   background-color: black;
 }
 .project-btn.source:hover {
@@ -240,7 +240,7 @@ body {
 }
 .project-card:hover .project-content {
   opacity: 1;
-} */
+}
 
 /* mini project */
 .mini-project-container {
@@ -505,9 +505,9 @@ footer {
 .fa-brands {
   transition: transform 0.5s;
 }
-/* .fa-brands:hover {
+.fa-brands:hover {
   transform: scale(1.2);
-} */
+}
 
 /*              adaptive               */
 
@@ -694,57 +694,7 @@ footer {
     margin: 0 5px;
   }
 }
-@media (hover: hover) {
-  .link a:hover,
-  .link.active a {
-    opacity: 1;
-  }
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
-  .project-btn.live:hover {
-    background-color: black;
-  }
-  .project-btn.source:hover {
-    background-color: rgb(255, 255, 255);
-  }
-  .project-card:hover .project-img {
-    filter: blur(80px);
-  }
-  .project-card:hover .project-content {
-    opacity: 1;
-  }
-  .fa-brands:hover {
-    transform: scale(1.2);
-  }
-}
 
-<<<<<<< HEAD
-@media (hover: none) {
-  /* ==================hover efect for mobile========================== */
-  .aHover {
-    opacity: 1 !important;
-  }
-  .brandsHover {
-    transform: scale(1.2) !important;
-  }
-  .myBtnHover {
-    background-color: #555 !important;
-  }
-  .liveBtnHover {
-    background-color: #000000 !important;
-  }
-  .sourceBtnHover {
-    background-color: #ffffff !important;
-  }
-  .cardHover .project-img {
-    filter: blur(80px);
-  }
-  .cardHover .project-content {
-    opacity: 1;
-  }
-  /* =======================================================*/
-=======
 @media(hover: none) {
     /* ==================hover efect for mobile========================== */
     .aHover {
@@ -763,11 +713,10 @@ footer {
       background-color: #ffffff !important;
     }
     .cardHover .project-img {
-      filter: blur(80px); 
+      filter: blur(80px);
     }
     .cardHover .project-content {
       opacity: 1;
     }
     /* =======================================================*/
->>>>>>> 815ab1c9650c8e7e0da5b27a567a874383efc77d
 }
