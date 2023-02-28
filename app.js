@@ -31,7 +31,6 @@ let a = document.querySelectorAll("a");
 let myBtn = document.getElementById("myBtn");
 let liveBtns = document.querySelectorAll(".live");
 let sourceBtns = document.querySelectorAll(".source");
-console.log(myBtn)
 
 let hover = (e, className) => {
   e.target.classList.add(className);
