@@ -713,7 +713,7 @@ footer {
       background-color: #ffffff !important;
     }
     .cardHover .project-img {
-      filter: blur(80px) !important;
+      /* filter: blur(80px) !important; */
     }
     .cardHover .project-content {
       opacity: 1 !important;
