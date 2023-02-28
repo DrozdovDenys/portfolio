@@ -448,6 +448,9 @@ footer {
   .project-info {
     margin: 10px;
   }
+  .project-img {
+    transition: 0s;
+  }
   .mini-project-card {
     flex: 0 1 49%;
     min-height: 250px;
