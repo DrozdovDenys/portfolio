@@ -629,29 +629,6 @@ footer {
     transition: 1s;
     padding: 60px 30px;
   }
-  /* ==================hover efect for mobile========================== */
-  .aHover {
-    opacity: 1 !important;
-  }
-  .brandsHover {
-    transform: scale(1.2) !important;
-  }
-  .myBtnHover {
-    background-color: #555 !important;
-  }
-  .liveBtnHover {
-    background-color: #000000 !important;
-  }
-  .sourceBtnHover {
-    background-color: #ffffff !important;
-  }
-  .cardHover .project-img {
-    filter: blur(80px) !important;
-  }
-  .cardHover .project-content {
-    opacity: 1 !important;
-  }
-  /* =======================================================*/
 }
 
 @media screen and (max-width: 550px) {
@@ -716,4 +693,30 @@ footer {
   .link a {
     margin: 0 5px;
   }
+}
+
+@media(hover: none) {
+    /* ==================hover efect for mobile========================== */
+    .aHover {
+      opacity: 1 !important;
+    }
+    .brandsHover {
+      transform: scale(1.2) !important;
+    }
+    .myBtnHover {
+      background-color: #555 !important;
+    }
+    .liveBtnHover {
+      background-color: #000000 !important;
+    }
+    .sourceBtnHover {
+      background-color: #ffffff !important;
+    }
+    .cardHover .project-img {
+      filter: blur(80px) !important;
+    }
+    .cardHover .project-content {
+      opacity: 1 !important;
+    }
+    /* =======================================================*/
 }
