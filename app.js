@@ -76,3 +76,5 @@ function topFunction() {
 //   btn.addEventListener("touchstart", (e) => hover(e, 'sourceBtnHover'));
 //   btn.addEventListener("touchend", (e) => endOfHover(e, 'sourceBtnHover'));
 // });
+var nofullhover = window.matchMedia("(hover:none), (hover:on-demand)").matches //returns true or false
+console.log(nofullhover)
