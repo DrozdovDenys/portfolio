@@ -25,12 +25,16 @@ function topFunction() {
 }
 
 // hover for Mobile Devices
-let allCards = document.querySelectorAll(".project-card");
+let projects = document.querySelector(".project-container");
 let faBrands = document.querySelectorAll(".fa-brands");
 let a = document.querySelectorAll("a");
 let myBtn = document.getElementById("myBtn");
 let liveBtns = document.querySelectorAll(".live");
 let sourceBtns = document.querySelectorAll(".source");
+
+projects.addEventListener("touchstart", (e) => cardHover(e, 'cardHover'));
+projects.addEventListener("touchend", (e) => endOfCardHover(e, 'cardHover'));
+
 
 let hover = (e, className) => {
   e.target.classList.add(className);
@@ -49,31 +53,26 @@ let endOfCardHover = (e, className) => {
 };
 
 
-allCards.forEach((card) => {
-  card.addEventListener("touchstart", (e) => cardHover(e, 'cardHover'));
-  card.addEventListener("touchend", (e) => endOfCardHover(e, 'cardHover'));
-});
-
 faBrands.forEach((faBrand) => {
-  faBrand.addEventListener("touchmove", (e) => hover(e, 'brandsHover'));
+  faBrand.addEventListener("touchstart", (e) => hover(e, 'brandsHover'));
   faBrand.addEventListener("touchend", (e) => endOfHover(e, 'brandsHover'));
 });
 
 a.forEach((link) => {
-  link.addEventListener("touchmove", (e) => hover(e, 'aHover'));
+  link.addEventListener("touchstart", (e) => hover(e, 'aHover'));
   link.addEventListener("touchend", (e) => endOfHover(e, 'aHover'));
 });
 
 
-myBtn.addEventListener("touchmove", (e) => hover(e, 'myBtnHover'));
+myBtn.addEventListener("touchstart", (e) => hover(e, 'myBtnHover'));
 myBtn.addEventListener("touchmove", (e) => endOfHover(e, 'myBtnHover'));
 
 liveBtns.forEach((btn) => {
-  btn.addEventListener("touchmove", (e) => hover(e, 'liveBtnHover'));
+  btn.addEventListener("touchstart", (e) => hover(e, 'liveBtnHover'));
   btn.addEventListener("touchend", (e) => endOfHover(e, 'liveBtnHover'));
 });
 
 sourceBtns.forEach((btn) => {
-  btn.addEventListener("touchmove", (e) => hover(e, 'sourceBtnHover'));
+  btn.addEventListener("touchstart", (e) => hover(e, 'sourceBtnHover'));
   btn.addEventListener("touchend", (e) => endOfHover(e, 'sourceBtnHover'));
 });
