@@ -579,7 +579,7 @@ footer {
 }
 
 /* ==================hover efect for mobile========================== */
-/* @media (hover: none) {
+@media (hover: none) {
   .aHover {
     opacity: 1 !important;
   }
@@ -604,5 +604,5 @@ footer {
     .project-img, .project-content {
     transition: 0s;
   }
-} */
+}
 /* =======================================================*/
