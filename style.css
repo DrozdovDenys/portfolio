@@ -448,9 +448,7 @@ footer {
   .project-info {
     margin: 10px;
   }
-  .project-img, .project-content {
-    transition: 0s;
-  }
+
   .mini-project-card {
     flex: 0 1 49%;
     min-height: 250px;
@@ -580,8 +578,8 @@ footer {
   }
 }
 
-@media (hover: none) {
-  /* ==================hover efect for mobile========================== */
+/* ==================hover efect for mobile========================== */
+/* @media (hover: none) {
   .aHover {
     opacity: 1 !important;
   }
@@ -598,10 +596,13 @@ footer {
     background-color: #ffffff !important;
   }
   .cardHover .project-img {
-    filter: blur(80px);
+    filter: blur(20px);
   }
   .cardHover .project-content {
     opacity: 1;
   }
-  /* =======================================================*/
-}
+    .project-img, .project-content {
+    transition: 0s;
+  }
+} */
+/* =======================================================*/

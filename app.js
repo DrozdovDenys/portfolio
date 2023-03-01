@@ -25,54 +25,54 @@ function topFunction() {
 }
 
 // hover for Mobile Devices
-let projects = document.querySelector(".project-container");
-let faBrands = document.querySelectorAll(".fa-brands");
-let a = document.querySelectorAll("a");
-let myBtn = document.getElementById("myBtn");
-let liveBtns = document.querySelectorAll(".live");
-let sourceBtns = document.querySelectorAll(".source");
+// let projects = document.querySelector(".project-container");
+// let faBrands = document.querySelectorAll(".fa-brands");
+// let a = document.querySelectorAll("a");
+// let myBtn = document.getElementById("myBtn");
+// let liveBtns = document.querySelectorAll(".live");
+// let sourceBtns = document.querySelectorAll(".source");
 
-projects.addEventListener("touchstart", (e) => cardHover(e, 'cardHover'));
-projects.addEventListener("touchend", (e) => endOfCardHover(e, 'cardHover'));
-
-
-let hover = (e, className) => {
-  e.target.classList.add(className);
-};
-
-let endOfHover = (e, className) => {
-  e.target.classList.remove(className);
-};
-
-let cardHover = (e, className) => {
-  e.target.closest('.project-card').classList.add(className);
-};
-
-let endOfCardHover = (e, className) => {
-  e.target.closest('.project-card').classList.remove(className);
-};
+// projects.addEventListener("touchstart", (e) => cardHover(e, 'cardHover'));
+// projects.addEventListener("touchend", (e) => endOfCardHover(e, 'cardHover'));
 
 
-faBrands.forEach((faBrand) => {
-  faBrand.addEventListener("touchstart", (e) => hover(e, 'brandsHover'));
-  faBrand.addEventListener("touchend", (e) => endOfHover(e, 'brandsHover'));
-});
+// let hover = (e, className) => {
+//   e.target.classList.add(className);
+// };
 
-a.forEach((link) => {
-  link.addEventListener("touchstart", (e) => hover(e, 'aHover'));
-  link.addEventListener("touchend", (e) => endOfHover(e, 'aHover'));
-});
+// let endOfHover = (e, className) => {
+//   e.target.classList.remove(className);
+// };
+
+// let cardHover = (e, className) => {
+//   e.target.closest('.project-card').classList.add(className);
+// };
+
+// let endOfCardHover = (e, className) => {
+//   e.target.closest('.project-card').classList.remove(className);
+// };
 
 
-myBtn.addEventListener("touchstart", (e) => hover(e, 'myBtnHover'));
-myBtn.addEventListener("touchmove", (e) => endOfHover(e, 'myBtnHover'));
+// faBrands.forEach((faBrand) => {
+//   faBrand.addEventListener("touchstart", (e) => hover(e, 'brandsHover'));
+//   faBrand.addEventListener("touchend", (e) => endOfHover(e, 'brandsHover'));
+// });
 
-liveBtns.forEach((btn) => {
-  btn.addEventListener("touchstart", (e) => hover(e, 'liveBtnHover'));
-  btn.addEventListener("touchend", (e) => endOfHover(e, 'liveBtnHover'));
-});
+// a.forEach((link) => {
+//   link.addEventListener("touchstart", (e) => hover(e, 'aHover'));
+//   link.addEventListener("touchend", (e) => endOfHover(e, 'aHover'));
+// });
 
-sourceBtns.forEach((btn) => {
-  btn.addEventListener("touchstart", (e) => hover(e, 'sourceBtnHover'));
-  btn.addEventListener("touchend", (e) => endOfHover(e, 'sourceBtnHover'));
-});
+
+// myBtn.addEventListener("touchstart", (e) => hover(e, 'myBtnHover'));
+// myBtn.addEventListener("touchmove", (e) => endOfHover(e, 'myBtnHover'));
+
+// liveBtns.forEach((btn) => {
+//   btn.addEventListener("touchstart", (e) => hover(e, 'liveBtnHover'));
+//   btn.addEventListener("touchend", (e) => endOfHover(e, 'liveBtnHover'));
+// });
+
+// sourceBtns.forEach((btn) => {
+//   btn.addEventListener("touchstart", (e) => hover(e, 'sourceBtnHover'));
+//   btn.addEventListener("touchend", (e) => endOfHover(e, 'sourceBtnHover'));
+// });
