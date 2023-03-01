@@ -41,17 +41,17 @@ let endOfHover = (e, className) => {
 };
 
 let cardHover = (e, className) => {
-  e.target.closest('.project-card').classList.toggle(className);
+  e.target.closest('.project-card').classList.add(className);
 };
 
-// let endOfCardHover = (e, className) => {
-//   e.target.closest('.project-card').classList.remove(className);
-// };
+let endOfCardHover = (e, className) => {
+  e.target.closest('.project-card').classList.remove(className);
+};
 
 
 allCards.forEach((card) => {
-  card.addEventListener("touchmove", (e) => cardHover(e, 'cardHover'));
-  // card.addEventListener("touchend", (e) => endOfCardHover(e, 'cardHover'));
+  card.addEventListener("touchstart", (e) => cardHover(e, 'cardHover'));
+  card.addEventListener("touchend", (e) => endOfCardHover(e, 'cardHover'));
 });
 
 faBrands.forEach((faBrand) => {

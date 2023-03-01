@@ -597,9 +597,9 @@ footer {
   .sourceBtnHover {
     background-color: #ffffff !important;
   }
-  /* .cardHover .project-img {
-    filter: blur(20px);
-  } */
+  .cardHover .project-img {
+    filter: blur(80px);
+  }
   .cardHover .project-content {
     opacity: 1;
   }
